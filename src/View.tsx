@@ -1,4 +1,4 @@
-import MottoEntries from './MottoEntries';
+import Motto from './Motto';
 import Navbar from './Navbar';
 import styles from './View.module.css'
 import ViewContent from './ViewContent';
@@ -8,7 +8,7 @@ function View(){
             <div className={styles.container}>
                 <Navbar/>
                 <ViewContent/>
-                <MottoEntries/>
+                <Motto/>
             </div>
         </>
     )

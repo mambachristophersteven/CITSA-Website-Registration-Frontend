@@ -37,7 +37,7 @@ body{
     align-items: center;
     overflow: hidden;
 }
-.navbar1{
+.navbar{
     display: flex;
     align-items: center;
     padding: 0.2rem 2%;

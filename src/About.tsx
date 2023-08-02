@@ -1,12 +1,12 @@
 import styles from './About.module.css';
 import FormContent from './FormContent';
-import Navbar1 from './Navbar1';
+import Navbar from './Navbar';
 
 function About(){
     return(
         <>
             <div className={styles.container}>
-                <Navbar1/>
+                <Navbar/>
                 <FormContent/>
             </div>
         </>

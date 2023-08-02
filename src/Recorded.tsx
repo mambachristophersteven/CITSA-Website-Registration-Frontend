@@ -1,14 +1,14 @@
 import styles from './Recorded.module.css'
-import Navbar2 from "./Navbar2";
+import Navbar from "./Navbar";
 import RecordedContent from './RecordedContent';
-import MottoRecorded from './MottoRecorded';
+import Motto from './Motto';
 function Recorded(){
     return(
         <>
             <div className={styles.container}>
-                <Navbar2/>
+                <Navbar/>
                 <RecordedContent/>
-                <MottoRecorded/>
+                <Motto/>
 
             </div>
         </>

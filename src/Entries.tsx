@@ -1,14 +1,14 @@
-import Navbar3 from "./Navbar3";
+import Navbar from "./Navbar";
 import EntriesContent from "./EntriesContent";
 import styles from './Entries.module.css'
-import MottoEntries from "./MottoEntries";
+import Motto from "./Motto";
 function Entries(){
     return(
         <>
             <div className={styles.container}>
-                <Navbar3/>
+                <Navbar/>
                 <EntriesContent/>
-                <MottoEntries/>
+                <Motto/>
             </div>
             
         </>

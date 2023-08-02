@@ -2,6 +2,17 @@ import styles from './View.module.css'
 
 
 function ViewContent(){
+    const fakeData = new Array(5).fill(
+        {
+            id: 1,
+            image: "/citsa logo.png",
+            name: "Asare Owen",
+            index_number: "PS/CSC/19/61",
+            email: "owen23@gmail.com",
+            username: "King0",
+            password: "*******"
+        }
+    )
     return(
         <>
             <div className={styles.content}>
@@ -23,6 +34,7 @@ function ViewContent(){
                             <thead>
                                 <tr>
                                     <th>No.</th>
+                                    <th>Image</th>
                                     <th>Name</th>
                                     <th>Index No.</th>
                                     <th>Email</th>
@@ -31,46 +43,19 @@ function ViewContent(){
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asare Owen</td>
-                                    <td>ps/csc/19/0033</td>
-                                    <td>owen23@gmail.com</td>
-                                    <td>kingO</td>
-                                    <td>******</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asare Owen</td>
-                                    <td>ps/csc/19/0033</td>
-                                    <td>owen23@gmail.com</td>
-                                    <td>kingO</td>
-                                    <td>******</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asare Owen</td>
-                                    <td>ps/csc/19/0033</td>
-                                    <td>owen23@gmail.com</td>
-                                    <td>kingO</td>
-                                    <td>******</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asare Owen</td>
-                                    <td>ps/csc/19/0033</td>
-                                    <td>owen23@gmail.com</td>
-                                    <td>kingO</td>
-                                    <td>******</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asare Owen</td>
-                                    <td>ps/csc/19/0033</td>
-                                    <td>owen23@gmail.com</td>
-                                    <td>kingO</td>
-                                    <td>******</td>
-                                </tr>
+                                {
+                                    fakeData.map((user, index)=>(
+                                        <tr>
+                                            <td>{index+1}</td>
+                                            <td><img src={user.image}/></td>
+                                            <td>{user.name}</td>
+                                            <td>{user.index_number}</td>
+                                            <td>{user.email}</td>
+                                            <td>{user.username}</td>
+                                            <td>{user.password}</td>
+                                        </tr>
+                                    ))
+                                }
                             </tbody>
                         </table>
                     </div>
